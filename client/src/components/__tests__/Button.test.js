@@ -4,3 +4,6 @@ import Button from '../Button';
 
 afterEach(cleanup);
 
+test('Button renders without crashing', () => {
+  render(<Button />);
+});
