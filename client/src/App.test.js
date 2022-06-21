@@ -1,5 +1,7 @@
-import { render, screen } from '@testing-library/react';
+import { render, cleanup, screen } from '@testing-library/react';
 import App from './App';
+
+afterEach(cleanup);
 
 test('renders proud parent logo text', () => {
   render(<App />);
