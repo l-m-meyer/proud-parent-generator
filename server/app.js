@@ -1,6 +1,6 @@
 require('dotenv').config();
 const { ENVIRONMENT, PORT } = process.env;
-const cors = require(cors);
+const cors = require('cors');
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
@@ -11,6 +11,9 @@ const app = express();
 app.use(morgan(ENVIRONMENT));
 app.use(cors());
 app.use(bodyParser.json());
+
+// db connection
+const db = require('./configs/db.config');
 
 // routes import
 const catsRoutes = require('./routes/catRoutes');
