@@ -16,11 +16,9 @@ app.use(bodyParser.json());
 const db = require('./configs/db.config');
 
 // routes import
-const catsRoutes = require('./routes/catRoutes');
 const phrases = require('./routes/phraseRoutes');
 
 // routes
-app.use('/cats', catsRoutes());
 app.use('/phrases', phrases(db))
 
 app.get('/', (req, res) => {
