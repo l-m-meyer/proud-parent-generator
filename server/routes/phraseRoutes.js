@@ -5,7 +5,7 @@ module.exports = (db) => {
     db
       .query(`SELECT * FROM phrases ORDER BY RANDOM() LIMIT 1`)
       .then((data) => {
-        res.json(data);
+        res.json(data.rows[0]);
       });
   });
 
