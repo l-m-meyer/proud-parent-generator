@@ -2,5 +2,5 @@ DROP TABLE IF EXISTS phrases CASCADE;
 
 CREATE TABLE phrases (
   id SERIAL PRIMARY KEY,
-  phrase STRING
+  phrase TEXT
 );
