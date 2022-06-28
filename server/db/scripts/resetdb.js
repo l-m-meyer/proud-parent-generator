@@ -52,7 +52,7 @@ const resetDB = async () => {
     client.end();
   } catch (e) {
     console.log("ERROR OCCURED:\n", e);
-    // client.end();
+    client.end();
   }
 }
 
