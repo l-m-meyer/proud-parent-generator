@@ -20,7 +20,11 @@ function App() {
     <div className="App">
       <h1>Proud Parent</h1>
       <Quote phrase={phrase} />
-      <Button queryServer={queryServer} />
+      <Button
+        queryServer={queryServer}
+      >
+        be kind to me
+      </Button>
     </div>
   );
 }
