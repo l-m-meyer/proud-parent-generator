@@ -1,6 +1,12 @@
 
-export default function Button({ queryServer }) {
+export default function Button(props) {
+  const { queryServer } = props;
   return (
-    <button onClick={queryServer}>be kind to me</button>
+    <button
+      className="btn"
+      onClick={queryServer}
+    >
+      {props.children}
+    </button>
   );
 };
