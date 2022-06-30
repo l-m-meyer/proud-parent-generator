@@ -1,6 +1,6 @@
 
-export default function Button(props) {
+export default function Button({ queryServer }) {
   return (
-    <button>be kind to me</button>
+    <button onClick={queryServer}>be kind to me</button>
   );
 };
