@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import axios from 'axios';
+import QuoteContainer from './components/QuoteContainer';
 import Quote from './components/Quote';
 import Button from './components/Button';
 
@@ -19,12 +20,10 @@ function App() {
   return (
     <div className="App">
       <h1>Proud Parent</h1>
-      <Quote phrase={phrase} />
-      <Button
+      <QuoteContainer
+        phrase={phrase}
         queryServer={queryServer}
-      >
-        be kind to me
-      </Button>
+      />
     </div>
   );
 }

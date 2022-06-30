@@ -1,9 +1,9 @@
+import './Quote.css';
 
+export default function Quote(props) {
 
-export default function Quote({ phrase }) {
+  const { phrase } = props;
   return (
-    <article>
-      <h3>{phrase}</h3>
-    </article>
+    <h3>{props.children}</h3>
   );
 };
