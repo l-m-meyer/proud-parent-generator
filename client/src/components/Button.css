@@ -1,0 +1,13 @@
+.btn {
+  width: fit-content;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background-color: lightskyblue;
+  color: darkslategrey;
+  border-radius: 10px;
+  box-shadow: 3px 3px darkblue;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(59, 8, 96);
+}
