@@ -1,5 +1,4 @@
 import { render, cleanup } from '@testing-library/react';
-
 import Quote from '../Quote';
 
 afterEach(cleanup);
